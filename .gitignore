@@ -16,3 +16,8 @@ Saved/
 # OS
 .DS_Store
 Thumbs.db
+
+# Visual Studio
+.vs/
+*.db-shm
+*.db-wal
