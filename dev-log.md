@@ -1,13 +1,40 @@
 # 開発ログ
+## 2026/04/26
+### Added
+- `Blueprint\`
+    - `Data\`スキルツリー用データ管理タブ
+        - `S_SkillTree`スキルツリーのデータテーブル(DT)の行構造体{Value\UpgradeCost}
+        - `DT_NB_MaxAmmo`通常弾(NormalBullet)の最大弾数DT
+        - `DT_NB_Speed`NBの初期速度DT
+        - `DT_NB_Weight`NBの重さDT
+    - `System\`
+        - `GI_Parameter`スキルツリーの各ノードのレベル、装備された弾の種類、を保持するゲームインスタンス
+### Changed
+- `Blueprint\`
+    - `Projectile\`
+        - `BP_NormalBullet`初期速度、重さのパラメータを`GI_Parameter`から取得するように変更
+    - `System\`
+        - `BP_PlayerPawn`最大弾数と装備された弾の種類を`GI_Parameter`から取得するように変更
+### Removed
+- `Blueprint\`
+    - `Projectile\`
+        - `DA_ProjectileConfig_Base`DTでスキルツリーで操作するパラメータの種類を拡張できるようにするため、DAは削除
+        - `DA_NormalBullet`同上
+
+---
+
 ## 2026/04/25
+### Added
 - `UI\WBP_ResultMenu`でクリア画面の作成
-- `UI\WBP_CrossHair`のバグ修正、カーソル追従機能を`BP_PlayerPawn`に移動
 - `BP_Projectile_Base`として発射物の親コンポーネントを作成
 - `BP_NormalBullet`として通常弾を作成
 - `DA_ProjectileConfig_Base`で発射物のデータアセットの種類を作成
-- `DA_NormalBullet`のパラメータを作成
+- `DA_NormalBullet`の初期パラメータを作成
 - `BP_PlayerPawn`で発射物の数の現在数を管理
 - `BP_PlayerPawn`と`BP_StageManager`で失敗判定を追加
+### Changed
+### Fixed
+- `UI\WBP_CrossHair`のバグ修正、カーソル追従機能を`BP_PlayerPawn`に移動
 
 ---
 
