@@ -1,4 +1,24 @@
 # 開発ログ
+## 2026/04/27
+### Added
+- `Maps\`
+    - `Stages\`
+        - `Stage_1\`
+            - `Stage_1_GrayBox`ステージのフォルダを追加し、ブロック用サブレベルを作成
+- `Content\`
+    - `UI\`
+        - `WBP_StageButton`ステージセレクト用ボタン作成
+        - `WBP_StageSelect`GIのUnlockedStageLevelを参照してステージレベルを生成
+### Cahnged
+- `Content\`
+    - `UI\`
+        - `WBP_ResultMenu`セレクトボタンでステージセレクトUIを呼び出す機能追加
+    - `Blueprint\`
+        - `Environment\`
+            - `BP_BlockBase`物理シミュレーションをデフォルトに
+
+---
+
 ## 2026/04/26
 ### Added
 - `Blueprint\`
