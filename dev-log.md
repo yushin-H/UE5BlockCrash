@@ -1,4 +1,19 @@
 # 開発ログ
+## 2026/04/28
+### Added
+- `Blueprints/`
+    - `Environment/`
+        - `Blocks/` `BP_BlockBase`の子BPでブロックアセットを作成
+### Changed
+- `Maps\`
+    - `Stages\`
+        - `Stage_2\`
+            - `Stage_2_GrayBox`仮ステージ制作
+### Removed
+### Fixed
+
+---
+
 ## 2026/04/27
 ### Added
 - `Maps\`
