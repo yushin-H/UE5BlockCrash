@@ -2,20 +2,38 @@
 ## 2026/04/27
 ### Added
 - `Maps\`
-    - `Stages\`
+    - `Stages\`ステージのフォルダを追加し、ブロック用サブレベルを作成
         - `Stage_1\`
-            - `Stage_1_GrayBox`ステージのフォルダを追加し、ブロック用サブレベルを作成
+            - `Stage_1_GrayBox`
+        - `Stage_2\`
+            - `Stage_2`
+            - `Stage_2_GrayBox`
+        - `Stage_3\`
+            - `Stage_3`
+            - `Stage_3_GrayBox`
+        - `Stage_4\`
+            - `Stage_4`
+            - `Stage_4_GrayBox`
+        - `Stage_5\`
+            - `Stage_5`
+            - `Stage_5_GrayBox`
 - `Content\`
     - `UI\`
         - `WBP_StageButton`ステージセレクト用ボタン作成
         - `WBP_StageSelect`GIのUnlockedStageLevelを参照してステージレベルを生成
-### Cahnged
+### Changed
 - `Content\`
     - `UI\`
         - `WBP_ResultMenu`セレクトボタンでステージセレクトUIを呼び出す機能追加
     - `Blueprint\`
         - `Environment\`
-            - `BP_BlockBase`物理シミュレーションをデフォルトに
+            - `BP_BlockBase`物理シミュレーションをデフォルトでtrue
+        - `System\`
+            - `BP_StageManager`Clear変数を参照してリザルトUIをcreateする仕様に変更, クリアしたら次ステージを解放する機能追加
+            - `GI_Parameter`UnlockedStageLevel変数を追加
+### Removed
+### Fixed
+- `Config/DefaultEngine.ini`の指定ステージを編集したことによる起動時のクラッシュを修正
 
 ---
 
