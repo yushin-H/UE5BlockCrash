@@ -2,13 +2,22 @@
 ## 2026/04/28
 ### Added
 - `Blueprints/`
+    - `Data/`
+        - `S_LevelConfig` `DT_LevelSettings`の構造体
+        - `DT_LevelSettings`ステージの床やKillZoneの広さ、カメラ距離のデータベース
     - `Environment/`
-        - `Blocks/` `BP_BlockBase`の子BPでブロックアセットを作成
+        - `Blocks/` `BP_BlockBase`の子BPでブロックアセットを作成、`BP_FloorBase`で床の親BP作成
+    - `System`
+        - `BP_LevelDirector`でステージの床やKillZoneの広さを反映させる
+
+
 ### Changed
 - `Maps\`
     - `Stages\`
         - `Stage_2\`
             - `Stage_2_GrayBox`仮ステージ制作
+    - `Shared/`
+        - `BP_Environment_Base` `BP_FloorBase`で床を設定
 ### Removed
 ### Fixed
 
