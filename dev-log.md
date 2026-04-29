@@ -1,4 +1,38 @@
 # 開発ログ
+## 2026/04/28
+### Added
+- `Blueprints/`
+    - `Data/`
+        - `S_LevelConfig` `DT_LevelSettings`の構造体
+        - `DT_LevelSettings`ステージの床やKillZoneの広さ、カメラ距離のデータベース
+    - `Environment/`
+        - `Blocks/` `BP_BlockBase`の子BPでブロックアセットを作成、`BP_FloorBase`で床の親BP作成
+- `Maps/`
+    - `Stages/`
+        - `Stage_1/`
+            - `Stage_1_GrayBox`ブロック設置
+        - `Stage_2/`
+            - `Stage_2_GrayBox`ブロック設置
+        - `Stage_3/`
+            - `Stage_3_GrayBox`ブロック設置
+- `Meshes/`
+    - `SM_CircleFloor`床のメッシュ
+
+### Changed
+- `Blueprints/`
+    - `System/`
+        - `BP_PlayerPawn`クロスヘアの前方にブロックが無くても発射可能に変更
+- `Maps\`
+    - `Stages\`
+        - `Stage_2\`
+            - `Stage_2_GrayBox`仮ステージ制作
+    - `Shared/`
+        - `BP_Environment_Base` `BP_FloorBase`で円形の床を設定
+### Removed
+### Fixed
+
+---
+
 ## 2026/04/27
 ### Added
 - `Maps\`
