@@ -1,4 +1,21 @@
 # 開発ログ
+## 2026/04/30
+### Added
+- `Blueprints/`
+    - `System/`
+        - `BP_FireConponent`プレイヤーに追加する発射用アクタコンポーネント
+        - `Interface/`BPI用フォルダ
+        - `Manager/`CoinManagerやStageManagerなどManager用フォルダ
+
+--- 
+
+## 2026/04/29
+### Added
+- `UI/`
+    - `WBP_PlayerHUD`パラメータ表示UI作成
+
+---
+
 ## 2026/04/28
 ### Added
 - `Blueprints/`
