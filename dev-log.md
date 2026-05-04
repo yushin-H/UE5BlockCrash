@@ -1,4 +1,22 @@
 # 開発ログ
+## 2026/05/05
+### Changed
+- `Blueprints/`
+    - `System/`
+        - `Interface/`
+            - `BPI_ManagerMessage`コイン数管理用BPI追加
+        - `Manager/`
+            - `BP_CoinManager`コイン数管理をイベントディスパッチャーからBPIに変更
+            - `BP_UIManager`BPIでUIを更新するメッセージを送るように変更
+- `UI/`
+    - `Widget/`
+        - `WBP_PlayerHUD`コイン数管理をイベントディスパッチャーからBPIに変更
+### Fixed
+- `Blueprints/`
+    - `Environment/`
+        - `BP_KillZoneVolume`ボリューム初期化を関数で管理し、DTを読み込めないバグを修正
+
+---
 
 ## 2026/05/04
 ### Changed
