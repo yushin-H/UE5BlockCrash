@@ -1,4 +1,16 @@
 # 開発ログ
+
+## 2026/05/04
+### Changed
+- `Blueprints/`
+    - `System/`
+        - `BP_PlayerPawn`発射関連の処理を削除
+        - `BP_FireConponent`発射関連の処理を追加
+        - `Interface/`発射関連のBPIを整理
+        - `Manager/`発射した時のフローを整理
+
+---
+
 ## 2026/04/30
 ### Added
 - `Blueprints/`
