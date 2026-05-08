@@ -1,4 +1,14 @@
 # 開発ログ
+
+## 2026/05/08
+## Added
+- Blueprints/System/BP_SkillComponent GI参照用関数を持ったコンポーネント
+### Changed
+- Blueprints/Data/S_SkillTreeスキルツリー用DT用構造体
+- Blueprints/Data/DT_MaxAmmoIncreaseスキルツリー用DT
+- Blueprints/UI/Widget/WBP_PlayerHUD GI参照用関数でリファクタリング
+---
+
 ## 2026/05/05
 ### Changed
 - `Blueprints/`
