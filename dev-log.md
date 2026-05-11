@@ -1,4 +1,20 @@
 # 開発ログ
+## 2026/05/11
+### Changed
+- `Blueprints/`
+    - `System/`
+        - `BPFL_SkillTree`スキルツリーレベルアップ用の関数追加
+        - `Manager/`
+            - `BP_CoinManager`コイン消費用関数を追加
+        - `Player/`
+            - `BP_SkillComponent`現在コイン参照用関数を削除、`BP_CoinManager`に移動
+    - `UI/`
+        - `Widget/`
+            - `WBP_PlayerHUD` `BP_CoinManger`を参照してコイン数を表示するように変更
+            - `WBP_SkillNode`ボタンが押されたらスキルレベルが上がる機能を追加
+            
+---
+
 ## 2026/05/10
 ### Added
 - `Blueprints/`
@@ -16,7 +32,6 @@
         - `S_SkillTreeLevels`スキルレベル用構造体の名前を変更
     - `System/`
         - `GI_Parameter`NB用変数をMap型に変更。また、GIを参照しているBPも合わせて変更(SkillIDでスキルレベルをFindできるようにするため)
-
 
 ---
 
