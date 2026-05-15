@@ -1,4 +1,31 @@
 # 開発ログ
+## 2026/05/15
+## Changed
+- `Blueprints/`
+    - `Data/`
+         - `DT_SkillTree`DT内にテスト用のデータを追加
+         - `S_SkillTree`SkillID関連をname型から列挙型に変更
+    - `System/`
+        - `BPFL_SkillTree`SkillID関連をname型から列挙型に変更
+        - `GI_Parameter`SkillID関連をname型から列挙型に変更
+        - `Player/`
+            - `BP_SkillComponent`SkillID関連をname型から列挙型に変更
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillNode`SkillID関連をname型から列挙型に変更
+            - `WBP_SkillTree`列挙型を用い、ノードの解放条件をもとにノードを木構造で並べる機能追加
+
+---
+
+## 2026/05/14
+## Changed
+- `Blueprints/`
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillTree`背景、マウスでドラッグできる機能を追加
+
+---
+
 ## 2026/05/11
 ### Changed
 - `Blueprints/`
