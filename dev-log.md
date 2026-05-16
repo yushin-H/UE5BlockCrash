@@ -1,4 +1,14 @@
 # 開発ログ
+## 2026/05/16
+## Changed
+- `Blueprints/`
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillTree`ステージセレクト画面に遷移するボタンを追加
+            - `WBP_StageSelect`スキルツリー画面に遷移するボタンを追加
+
+---
+
 ## 2026/05/15
 ## Changed
 - `Blueprints/`
