@@ -1,6 +1,22 @@
 # 開発ログ
-## 2026/05/16
+## 2026/05/18
 ## Changed
+- `Blueprints/`
+    - `System/`
+        - `Interface/`
+            - `BPI_UIMessage`UpdateSkillTreeParameterを追加
+        - `Manager/`
+            - `BP_CoinManager`SpendCoins関数でスキルツリーにBPIでUI更新イベントを送る
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillNode`ノード強化時にパラメーターUI変更イベントを送る
+            - `WBP_SkillTree`パラメータUIを追加
+
+
+---
+
+## 2026/05/16
+### Changed
 - `Blueprints/`
     - `UI/`
         - `Widget/`
@@ -10,7 +26,7 @@
 ---
 
 ## 2026/05/15
-## Changed
+### Changed
 - `Blueprints/`
     - `Data/`
          - `DT_SkillTree`DT内にテスト用のデータを追加
@@ -28,7 +44,7 @@
 ---
 
 ## 2026/05/14
-## Changed
+### Changed
 - `Blueprints/`
     - `UI/`
         - `Widget/`
