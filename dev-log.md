@@ -1,6 +1,22 @@
 # 開発ログ
+## 2026/05/20
+### Changed
+- `Blueprints/`
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillNode`PrerequisiteIDで表示するスキルの表示切替機能追加
+            - `WBP_SkillTree`スキル習得後にUIを更新するイベントディスパッチャーを追加
+### Deleted
+- `Blueprints/`
+    - `Data/`
+        - `DT_NB_MaxAmmo`
+        - `DT_NB_Speed`
+        - `DT_NB_Weight`DT_SkillTreeに統合する前のDTを削除
+
+---
+
 ## 2026/05/18
-## Changed
+### Changed
 - `Blueprints/`
     - `System/`
         - `Interface/`
@@ -11,7 +27,6 @@
         - `Widget/`
             - `WBP_SkillNode`ノード強化時にパラメーターUI変更イベントを送る
             - `WBP_SkillTree`パラメータUIを追加
-
 
 ---
 
