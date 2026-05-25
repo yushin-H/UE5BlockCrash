@@ -1,12 +1,136 @@
 # 開発ログ
+## 2026/05/21
+### Add
+- `Blueprints/`
+    - `UI/`
+        - `Widget/`
+            - `WBP_TreeLines`SkillNode間に線を引く
+### Changed
+- `Blueprints/`
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillNode`TreeLinesにノードサイズを渡す用の参照を送る
+            - `WBP_SkillTree`TreeLinesにノードのインデックスを渡す用の参照を送る
+
+---
+
+## 2026/05/20
+### Changed
+- `Blueprints/`
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillNode`PrerequisiteIDで表示するスキルの表示切替機能追加
+            - `WBP_SkillTree`スキル習得後にUIを更新するイベントディスパッチャーを追加
+### Deleted
+- `Blueprints/`
+    - `Data/`
+        - `DT_NB_MaxAmmo`
+        - `DT_NB_Speed`
+        - `DT_NB_Weight`DT_SkillTreeに統合する前のDTを削除
+
+---
+
+## 2026/05/18
+### Changed
+- `Blueprints/`
+    - `System/`
+        - `Interface/`
+            - `BPI_UIMessage`UpdateSkillTreeParameterを追加
+        - `Manager/`
+            - `BP_CoinManager`SpendCoins関数でスキルツリーにBPIでUI更新イベントを送る
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillNode`ノード強化時にパラメーターUI変更イベントを送る
+            - `WBP_SkillTree`パラメータUIを追加
+
+---
+
+## 2026/05/16
+### Changed
+- `Blueprints/`
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillTree`ステージセレクト画面に遷移するボタンを追加
+            - `WBP_StageSelect`スキルツリー画面に遷移するボタンを追加
+
+---
+
+## 2026/05/15
+### Changed
+- `Blueprints/`
+    - `Data/`
+         - `DT_SkillTree`DT内にテスト用のデータを追加
+         - `S_SkillTree`SkillID関連をname型から列挙型に変更
+    - `System/`
+        - `BPFL_SkillTree`SkillID関連をname型から列挙型に変更
+        - `GI_Parameter`SkillID関連をname型から列挙型に変更
+        - `Player/`
+            - `BP_SkillComponent`SkillID関連をname型から列挙型に変更
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillNode`SkillID関連をname型から列挙型に変更
+            - `WBP_SkillTree`列挙型を用い、ノードの解放条件をもとにノードを木構造で並べる機能追加
+
+---
+
+## 2026/05/14
+### Changed
+- `Blueprints/`
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillTree`背景、マウスでドラッグできる機能を追加
+
+---
+
+## 2026/05/11
+### Changed
+- `Blueprints/`
+    - `System/`
+        - `BPFL_SkillTree`スキルツリーレベルアップ用の関数追加
+        - `Manager/`
+            - `BP_CoinManager`コイン消費用関数を追加
+        - `Player/`
+            - `BP_SkillComponent`現在コイン参照用関数を削除、`BP_CoinManager`に移動
+    - `UI/`
+        - `Widget/`
+            - `WBP_PlayerHUD` `BP_CoinManger`を参照してコイン数を表示するように変更
+            - `WBP_SkillNode`ボタンが押されたらスキルレベルが上がる機能を追加
+            
+---
+
+## 2026/05/10
+### Added
+- `Blueprints/`
+    - `System/`
+        - `BPFL_SkillTree`スキルツリー用のBP関数ライブラリ作成
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillTree`スキルツリーのノード配置用BP作成
+            - `WBP_SkillNode`スキルノード用UI作成
+
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_SkillTree`スキルツリー用DTの名前を変更
+        - `S_SkillTreeLevels`スキルレベル用構造体の名前を変更
+    - `System/`
+        - `GI_Parameter`NB用変数をMap型に変更。また、GIを参照しているBPも合わせて変更(SkillIDでスキルレベルをFindできるようにするため)
+
+---
 
 ## 2026/05/08
-## Added
-- Blueprints/System/BP_SkillComponent GI参照用関数を持ったコンポーネント
+### Added
+- `Blueprints/`
+    - `System/`
+        - `BP_SkillComponent` GI参照用関数を持ったコンポーネント
 ### Changed
-- Blueprints/Data/S_SkillTreeスキルツリー用DT用構造体
-- Blueprints/Data/DT_MaxAmmoIncreaseスキルツリー用DT
-- Blueprints/UI/Widget/WBP_PlayerHUD GI参照用関数でリファクタリング
+- `Blueprints/`
+    - `Data/`
+        - `S_SkillTree`スキルツリー用DT用構造体
+        - `DT_MaxAmmoIncrease`スキルツリー用DT
+    - `UI/`
+        - `Widget/`
+            - `WBP_PlayerHUD` GI参照用関数でリファクタリング
 ---
 
 ## 2026/05/05
