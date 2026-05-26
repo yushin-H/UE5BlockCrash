@@ -1,4 +1,20 @@
 # 開発ログ
+## 2026/05/26
+### Changed
+- `Blueprints/`
+    - `Projectile/`
+        - `BP_NormalBullet`StaticMeshComponentの重さ、初速の初期化機能を追加
+        - `BP_Projectile_Base`すべてPhysics Simulationで動かすために、Sphere Collisionと発射物コンポーネントを削除
+    - `System/`
+        - `Player/`
+            - `BP_FireComponent`弾生成時にカメラの向きを発射物に送る
+            - `BP_SkillComponent`パラメータ参照用関数のバグを修正
+    - `Data/`
+        - `DT_SkillTree`パラメータ調整
+
+
+---
+
 ## 2026/05/21
 ### Add
 - `Blueprints/`
