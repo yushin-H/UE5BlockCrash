@@ -1,4 +1,21 @@
 # 開発ログ
+## 2026/05/27
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_LevelSettings`床のサイズのパラメータを調整
+        - `DT_SkillTree`パラメータを調整
+        - `E_SkillIDs`床のサイズを変更するスキル(X, Y)を追加
+        - `S_LevelConfig`FloorBaseのスケールをVector2Dに変更
+    - `Environment/`
+        - `BP_FloorBase`StageManagerから呼び出される床のサイズの初期化用関数を追加
+    - `Projectile/`
+        - `BP_NormalBullet`HUD上の数値を切りのいい数値にするための内部スケーリング変数を追加
+    - `Manager/`
+        - `BP_StageManager`FloorやBlockの初期値ををGIから読み込む関数を追加
+
+---
+
 ## 2026/05/26
 ### Changed
 - `Blueprints/`
