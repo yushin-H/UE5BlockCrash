@@ -1,4 +1,42 @@
 # 開発ログ
+## 2026/05/31
+### Changed
+- リダイレクタ参照を更新した
+- `DefaultEngine`デフォルトのゲームインスタンスクラス、ゲームモード、ポーンクラスを再設定
+- `Blueprints/`
+    - `Data/`
+        - `DT_LevelSettings`パラメータ調整
+        - `DT_SkillTree`パラメータ調整
+    - `Environment/`
+        - `BP_BlockBase`ブロックが多いと重くなるのでsleepの閾値を上げた
+        - `Blocks/`
+            - `BP_BrickBlockHori`Meshをコンテンツ内のMeshに変更
+            - `BP_BrickBlockVert`Meshをコンテンツ内のMeshに変更
+    - `System/`
+        - `Manager/`
+            - `BP_StageManager`ステージの初期化をConstructionScriptに併記
+    - `UI/`
+        - `Widget/`
+            - `WBP_StageSelect`同じステージをリトライするデバック用ノードを追加
+- `Maps/`
+    - `Shared/`
+        - `Sample_Graybox.umap`古いブロックを削除
+    - `Stages/`
+        - `Stage_4/`
+            - `Stage_4_GrayBox.umap`新ステージ追加
+        - `Stage_5/`
+            - `Stage_5_GrayBox.umap`新ステージ追加
+- `Meshes/`
+    - `Blocks/`
+        - `Cube`BrickBrockのMeshを追加
+### Added
+- `Blueprints/`
+    - `Environment/`
+        - `Blocks/`
+            - `BP_BrickBlockCube`立方体のブロックを追加
+
+---
+
 ## 2026/05/27
 ### Changed
 - `Blueprints/`
