@@ -1,4 +1,43 @@
 # 開発ログ
+## 2026/06/02
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_LevelSettings`パラメータ調整
+        - `DT_SkillTree`パラメータ調整
+        - `E_SkillIDs`ボーナスコインのスキルノード追加
+    - `Environment/`
+        - `Blocks/`
+            - `BP_BrickBlockCube`親クラスをBP_BrickBlockに変更
+            - `BP_BrickBlockHori`親クラスをBP_BrickBlockに変更
+            - `BP_BrickBlockVert`親クラスをBP_BrickBlockに変更
+    - `System/`
+        - `Interface/`
+            - `BPI_ManagerMessage`AddCoins削除
+        - `Manager/`
+            - `BP_CoinManager`関数としてAddCoin追加
+            - `BP_GameRulesManager`CoinManagerのAddCoin参照
+            - `BP_StageManager`
+
+### Added
+- `Blueprints/`
+    - `Environment/`
+        - `BP_Coin`コインBP追加
+        - `Blocks/`
+            - `BP_BrickBlockBase`レンガブロックの親クラスを追加
+- `Maps/`
+    - `Stages/`
+        - `Stage_10/`新ステージ追加
+        - `Stage_9/`新ステージ追加
+        - `Stage_8/`新ステージ追加
+        - `Stage_7/`新ステージ追加
+- `Meshes/`
+    - `Coin`
+    - `CoinVer`
+- `Niagara/`コイン落下エフェクト追加
+
+---
+
 ## 2026/06/01
 ### Changed
 - `Blueprints/`
