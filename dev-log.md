@@ -1,4 +1,23 @@
 # 開発ログ
+## 2026/06/01
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_LevelSettings`パラメータ調整
+    - `Environment/`
+        - `BP_FloorBase`厚み調整、CCD追加
+        - `BP_KillZoneVolume`Volumeの生成をConstructionScriptに移行、ノードのリファクタリング
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillTree`数字の小数点以下を表示しないように変更
+
+### Added
+- `Maps/`
+    - `Stages/`
+        - `Stage_6/`新ステージ追加
+
+---
+
 ## 2026/05/31
 ### Changed
 - リダイレクタ参照を更新した
