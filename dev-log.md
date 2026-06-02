@@ -4,6 +4,30 @@
 - `Blueprints/`
     - `Data/`
         - `DT_LevelSettings`パラメータ調整
+        - `DT_SkillTree`パラメータ調整、ステージクリアボーナスSkillIDを追加
+    - `System/`
+        - `Interface/`
+            - `BPI_UIMessage`
+        - `Manager/`
+            - `BP_CoinManager`ボーナスコイン用関数を追加
+            - `BP_StageManager`ボーナスコイン用関数を追加
+            - `BP_UIManager`ResultMenuにコイン数を入力する
+    - `UI/`
+        - `Widget/`
+            - `WBP_ResultMenu`獲得コイン数を表示するUIを追加
+
+### Added
+- `Blueprints/`
+    - `Data/`
+        - `S_LevelSettings`構造体の名前を変更、ステージクリア時の獲得コイン用パラメータを追加
+
+---
+
+## 2026/06/02
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_LevelSettings`パラメータ調整
         - `DT_SkillTree`パラメータ調整
         - `E_SkillIDs`ボーナスコインのスキルノード追加
     - `Environment/`
