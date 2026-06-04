@@ -1,4 +1,23 @@
 # 開発ログ
+## 2026/06/04
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_SkillTree`通常弾サイズ増加スキルのパラメータ調整
+        - `E_SkillIDs`新スキル「通常弾サイズ増加」を追加
+    - `Projectile/`
+        - `BP_NormalBullet`サイズを変える機能追加
+    - `System/`
+        - `Player/`
+            - `BP_SkillComponent`サイズを読み込む関数を追加
+    - `UI/`
+        - `Widget/`
+            - `WBP_PlayerHUD`サイズを表示するUI追加
+            - `WBP_SkillNode`パラメータをFP32のまま読み込む仕様に変更
+            - `WBP_SkillTree`パラメータをFP32のまま読み込む仕様に変更
+
+---
+
 ## 2026/06/02
 ### Changed
 - `Blueprints/`
