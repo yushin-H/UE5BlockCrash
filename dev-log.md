@@ -1,4 +1,195 @@
 # 開発ログ
+
+## 2026/06/08
+### Changed
+- `README.md`ポートフォリオとして紹介する内容を追加
+### Add
+- `docs`README用gif, pngファイル追加
+- `LICENSE`MITライセンス追加
+
+---
+
+## 2026/06/04
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_SkillTree`通常弾サイズ増加スキルのパラメータ調整
+        - `E_SkillIDs`新スキル「通常弾サイズ増加」を追加
+    - `Projectile/`
+        - `BP_NormalBullet`サイズを変える機能追加
+    - `System/`
+        - `Player/`
+            - `BP_SkillComponent`サイズを読み込む関数を追加
+    - `UI/`
+        - `Widget/`
+            - `WBP_PlayerHUD`サイズを表示するUI追加
+            - `WBP_SkillNode`パラメータをFP32のまま読み込む仕様に変更
+            - `WBP_SkillTree`パラメータをFP32のまま読み込む仕様に変更
+
+---
+
+## 2026/06/02
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_LevelSettings`パラメータ調整
+        - `DT_SkillTree`パラメータ調整、ステージクリアボーナスSkillIDを追加
+    - `System/`
+        - `Interface/`
+            - `BPI_UIMessage`
+        - `Manager/`
+            - `BP_CoinManager`ボーナスコイン用関数を追加
+            - `BP_StageManager`ボーナスコイン用関数を追加
+            - `BP_UIManager`ResultMenuにコイン数を入力する
+    - `UI/`
+        - `Widget/`
+            - `WBP_ResultMenu`獲得コイン数を表示するUIを追加
+
+### Added
+- `Blueprints/`
+    - `Data/`
+        - `S_LevelSettings`構造体の名前を変更、ステージクリア時の獲得コイン用パラメータを追加
+
+---
+
+## 2026/06/02
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_LevelSettings`パラメータ調整
+        - `DT_SkillTree`パラメータ調整
+        - `E_SkillIDs`ボーナスコインのスキルノード追加
+    - `Environment/`
+        - `Blocks/`
+            - `BP_BrickBlockCube`親クラスをBP_BrickBlockに変更
+            - `BP_BrickBlockHori`親クラスをBP_BrickBlockに変更
+            - `BP_BrickBlockVert`親クラスをBP_BrickBlockに変更
+    - `System/`
+        - `Interface/`
+            - `BPI_ManagerMessage`AddCoins削除
+        - `Manager/`
+            - `BP_CoinManager`関数としてAddCoin追加
+            - `BP_GameRulesManager`CoinManagerのAddCoin参照
+            - `BP_StageManager`
+
+### Added
+- `Blueprints/`
+    - `Environment/`
+        - `BP_Coin`コインBP追加
+        - `Blocks/`
+            - `BP_BrickBlockBase`レンガブロックの親クラスを追加
+- `Maps/`
+    - `Stages/`
+        - `Stage_10/`新ステージ追加
+        - `Stage_9/`新ステージ追加
+        - `Stage_8/`新ステージ追加
+        - `Stage_7/`新ステージ追加
+- `Meshes/`
+    - `Coin`
+    - `CoinVer`
+- `Niagara/`コイン落下エフェクト追加
+
+---
+
+## 2026/06/01
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_LevelSettings`パラメータ調整
+    - `Environment/`
+        - `BP_FloorBase`厚み調整、CCD追加
+        - `BP_KillZoneVolume`Volumeの生成をConstructionScriptに移行、ノードのリファクタリング
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillTree`数字の小数点以下を表示しないように変更
+
+### Added
+- `Maps/`
+    - `Stages/`
+        - `Stage_6/`新ステージ追加
+
+---
+
+## 2026/05/31
+### Changed
+- リダイレクタ参照を更新した
+- `DefaultEngine`デフォルトのゲームインスタンスクラス、ゲームモード、ポーンクラスを再設定
+- `Blueprints/`
+    - `Data/`
+        - `DT_LevelSettings`パラメータ調整
+        - `DT_SkillTree`パラメータ調整
+    - `Environment/`
+        - `BP_BlockBase`ブロックが多いと重くなるのでsleepの閾値を上げた
+        - `Blocks/`
+            - `BP_BrickBlockHori`Meshをコンテンツ内のMeshに変更
+            - `BP_BrickBlockVert`Meshをコンテンツ内のMeshに変更
+    - `System/`
+        - `Manager/`
+            - `BP_StageManager`ステージの初期化をConstructionScriptに併記
+    - `UI/`
+        - `Widget/`
+            - `WBP_StageSelect`同じステージをリトライするデバック用ノードを追加
+- `Maps/`
+    - `Shared/`
+        - `Sample_Graybox.umap`古いブロックを削除
+    - `Stages/`
+        - `Stage_4/`
+            - `Stage_4_GrayBox.umap`新ステージ追加
+        - `Stage_5/`
+            - `Stage_5_GrayBox.umap`新ステージ追加
+- `Meshes/`
+    - `Blocks/`
+        - `Cube`BrickBrockのMeshを追加
+### Added
+- `Blueprints/`
+    - `Environment/`
+        - `Blocks/`
+            - `BP_BrickBlockCube`立方体のブロックを追加
+
+---
+
+## 2026/05/27
+### Changed
+- `Blueprints/`
+    - `Data/`
+        - `DT_LevelSettings`床のサイズのパラメータを調整
+        - `DT_SkillTree`パラメータを調整
+        - `E_SkillIDs`床のサイズを変更するスキル(X, Y)を追加
+        - `S_LevelConfig`FloorBaseのスケールをVector2Dに変更
+    - `Environment/`
+        - `BP_FloorBase`StageManagerから呼び出される床のサイズの初期化用関数を追加
+    - `Projectile/`
+        - `BP_NormalBullet`HUD上の数値を切りのいい数値にするための内部スケーリング変数を追加
+    - `Manager/`
+        - `BP_StageManager`FloorやBlockの初期値ををGIから読み込む関数を追加
+
+---
+
+## 2026/05/26
+### Changed
+- `Blueprints/`
+    - `Environment/`
+       - `BP_KillZoneVolume`弾が触れたらFireComponentにBPIを送る
+    - `Projectile/`
+        - `BP_NormalBullet`StaticMeshComponentの重さ、初速の初期化機能を追加
+        - `BP_Projectile_Base`すべてPhysics Simulationで動かすために、Sphere Collisionと発射物コンポーネントを削除
+    - `System/`
+        - `Player/`
+            - `BP_FireComponent`弾生成時にカメラの向きを発射物に送る/すべての弾が消えたらStageManagerにBPIを送る
+            - `BP_SkillComponent`パラメータ参照用関数のバグを修正
+        - `Interface/`
+            - `BPI_GameEvent`OnProjectileFallenを追加
+        - `Manager/`
+            - `BP_StageManager`手元の弾がなくなって5秒後にブロックの静止判定をする機能を追加
+    - `Data/`
+        - `DT_SkillTree`パラメータ調整
+        - `S_SkillTreeLevels`UpgradeCostの型をintに変更
+    - `UI/`
+        - `Widget/`
+            - `WBP_SkillNode`レベルアップ可・不可・MAXでノードの色を変える機能を追加
+
+---
+
 ## 2026/05/21
 ### Add
 - `Blueprints/`
