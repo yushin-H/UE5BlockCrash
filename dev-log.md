@@ -1,4 +1,14 @@
 # 開発ログ
+
+## 2026/06/08
+### Changed
+- `README.md`ポートフォリオとして紹介する内容を追加
+### Add
+- `docs`README用gif, pngファイル追加
+- `LICENSE`MITライセンス追加
+
+---
+
 ## 2026/06/04
 ### Changed
 - `Blueprints/`
