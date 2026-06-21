@@ -3,8 +3,10 @@
 > 弾を撃って積み重なったブロックを崩す、物理シミュレーション × シューティングゲーム  
 > Unreal Engine 5 を用いた個人開発プロジェクト
 
-<img src="docs/gameplay.gif" width="50%">
+<img src="docs/Title.png" width="50%">
 <img src="docs/skilltree.png" width="50%">
+<img src="docs/Result.png" width="50%">
+<img src="docs/gameplay.gif" width="50%">
 
 ---
 
