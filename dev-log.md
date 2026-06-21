@@ -1,4 +1,43 @@
 # 開発ログ
+## 2026/06/18
+### Changed
+- `Blueprints/`
+    - `UI/`
+        - `Widget/`
+            - `WBP_ResultMenu`汎用ボタンで再構成
+            - `WBP_SkillTree`汎用ボタンで再構成
+            - `WBP_StageSelect`汎用ボタンで再構成
+            - `WBP_TitleMenu`汎用ボタンで再構成
+### Added
+- `Blueprints/`
+    - `UI/`
+        - `Font/`UI用フォントを追加
+        - `Widget/`
+            - `Button/`ボタン用テクスチャを追加・汎用ボタンのUIを分離
+            - `WBP_PauseMenu`ポーズメニューのひな型
+
+---
+
+## 2026/06/17
+### Changed
+- `DefaultEngine`
+- `Blueprints/``
+    - `System/`
+        - `Manager/`
+            - `BP_StageManager`ConstructionScriptからGIを指定する関数を削除
+    - `UI/`
+        - `Widget/`
+            - `WBP_TreeLines`前のノードの間に線がつながらないバグを修正
+
+### Added
+- `Blueprints/`
+    - `System/`
+        - `GM_Title`タイトル画面のGameModeを追加
+    - `UI/`
+        - `Widget/`
+            - `WBP_TitleMenu`タイトル画面のUIを追加
+- `Maps/`
+    - `TitleMenu/`タイトルレベルを追加
 
 ## 2026/06/08
 ### Changed
